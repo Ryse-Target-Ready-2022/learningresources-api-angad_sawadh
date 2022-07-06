@@ -1,4 +1,4 @@
-package entity;
+package com.tgt.rysetii.learningresourcesapi.entity;
 
 import java.util.*;
 
