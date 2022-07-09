@@ -1,22 +1,23 @@
 package com.tgt.rysetii.learningresourcesapi.entity;
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class LearningResource {
-    private int id;
+    private Integer id;
     private String name;
-    private double costPrice;
-    private double sellingPrice;
-    private boolean productStatus;
-    private Date createdDate;
-    private Date publishedDate;
-    private Date retiredDate;
+    private Double costPrice;
+    private Double sellingPrice;
+    private LearningResourceStatus productStatus;
+    private LocalDate createdDate;
+    private LocalDate publishedDate;
+    private LocalDate retiredDate;
 
     public LearningResource(){
 
     }
 
-    public LearningResource(int id, String name, double costPrice, double sellingPrice, boolean productStatus, Date createdDate, Date publishedDate, Date retiredDate){
+    public LearningResource(Integer id, String name, Double costPrice, Double sellingPrice, LearningResourceStatus productStatus, LocalDate createdDate, LocalDate publishedDate, LocalDate retiredDate){
         this.id = id;
         this.name = name;
         this.costPrice = costPrice;
@@ -27,11 +28,11 @@ public class LearningResource {
         this.retiredDate = retiredDate;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -43,51 +44,51 @@ public class LearningResource {
         this.name = name;
     }
 
-    public double getCostPrice() {
+    public Double getCostPrice() {
         return costPrice;
     }
 
-    public void setCostPrice(double costPrice) {
+    public void setCostPrice(Double costPrice) {
         this.costPrice = costPrice;
     }
 
-    public double getSellingPrice() {
+    public Double getSellingPrice() {
         return sellingPrice;
     }
 
-    public void setSellingPrice(double sellingPrice) {
+    public void setSellingPrice(Double sellingPrice) {
         this.sellingPrice = sellingPrice;
     }
 
-    public boolean isProductStatus() {
+    public LearningResourceStatus isProductStatus() {
         return productStatus;
     }
 
-    public void setProductStatus(boolean productStatus) {
+    public void setProductStatus(LearningResourceStatus productStatus) {
         this.productStatus = productStatus;
     }
 
-    public Date getCreatedDate() {
+    public LocalDate getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(Date createdDate) {
+    public void setCreatedDate(LocalDate createdDate) {
         this.createdDate = createdDate;
     }
 
-    public Date getPublishedDate() {
+    public LocalDate getPublishedDate() {
         return publishedDate;
     }
 
-    public void setPublishedDate(Date publishedDate) {
+    public void setPublishedDate(LocalDate publishedDate) {
         this.publishedDate = publishedDate;
     }
 
-    public Date getRetiredDate() {
+    public LocalDate getRetiredDate() {
         return retiredDate;
     }
 
-    public void setRetiredDate(Date retiredDate) {
+    public void setRetiredDate(LocalDate retiredDate) {
         this.retiredDate = retiredDate;
     }
 }
