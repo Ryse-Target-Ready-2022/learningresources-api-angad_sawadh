@@ -1,13 +1,20 @@
 package com.tgt.rysetii.learningresourcesapi.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.util.*;
 
+@Entity
 public class LearningResource {
+    @Id
     private Integer id;
     private String name;
     private Double costPrice;
     private Double sellingPrice;
+    @Enumerated(EnumType.STRING)
     private LearningResourceStatus productStatus;
     private LocalDate createdDate;
     private LocalDate publishedDate;
