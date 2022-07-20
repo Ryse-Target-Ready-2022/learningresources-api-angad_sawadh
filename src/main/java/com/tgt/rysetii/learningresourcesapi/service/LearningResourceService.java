@@ -42,4 +42,8 @@ public class LearningResourceService {
         });
         return learningResources;
     }
+
+    public void deleteLearningResourceById(int id){
+        learningResourcesRepo.deleteById(id);
+    }
 }
